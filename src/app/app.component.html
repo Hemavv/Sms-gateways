@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+
+<label>API_KEY:
+<input type="text" name="test.api_key" [(ngModel)]="test.apiKey"></label><br/>
+<label>SENDER:</label>
+<input type="text" name="test.sender" [(ngModel)]="test.sender"><br/>
+<label>NUMBER:</label>
+<input type="number" name="test.numbers" [(ngModel)]="test.numbers"><br/>
+<label>MESSAGE:</label>
+<textarea name="test.message" [(ngModel)]="test.message"></textarea><br/>
+<button (click)="send()" style="margin-left:10%;">SEND</button>
